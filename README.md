@@ -14,3 +14,7 @@ You can check the [live demo here](https://riadz.github.io/data-warehouse/)
 * Jquery 3.5.1
 * Popper 1.16
 * Owl Carousel 2.3.4
+
+## Preview
+
+![Data Warehouse](https://cdn.dribbble.com/users/404195/screenshots/10058339/media/de27c8e94c46e46018c150ecc1ea8ea3.jpg)
