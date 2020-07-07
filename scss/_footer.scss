@@ -1,0 +1,154 @@
+.footer {
+  padding: 150px 0 0;
+
+  &-logo {
+    h3 {
+      color: color(color-2);
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 160%;
+    }
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  &-address {
+    margin-top: 65px;
+
+    color: color(color-2);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+  }
+
+  &-info {
+    margin-top: 10px;
+
+    color: color(color-2);
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+  }
+
+  &-links {
+    h4 {
+      margin-bottom: 30px;
+
+      color: color(color-2);
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 160%;
+    }
+    a {
+      display: block;
+      color: color(color-2);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 250%;
+
+      &:hover {
+        color: color(color-4);
+      }
+    }
+  }
+
+  &-social-media {
+    h4 {
+      color: color(color-2);
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 160%;
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 30px;
+
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+
+      background-color: rgba(33, 35, 83, 0.2);
+
+      &:not(:last-child) {
+        margin-right: 14px;
+      }
+
+      transition: background-color 0.3s ease;
+    }
+
+    &-link.facebook:hover {
+      background-color: #3b5998;
+    }
+    &-link.twitter:hover {
+      background-color: #00acee;
+    }
+    &-link.instagram:hover {
+      background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
+    }
+
+    @media (max-width: 768px) {
+      &-link.facebook {
+        background-color: #3b5998;
+      }
+      &-link.twitter {
+        background-color: #00acee;
+      }
+      &-link.instagram {
+        background: linear-gradient(
+          45deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2366 75%,
+          #bc1888 100%
+        );
+      }
+    }
+  }
+
+  &-copyright {
+    padding: 93px 0;
+
+    &-text {
+      color: color(color-2);
+      font-size: 12px;
+      line-height: 180%;
+      letter-spacing: 0.01em;
+
+      margin-bottom: 0;
+    }
+
+    &-message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: rgba(155, 105, 226, 0.2);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: rgba(155, 105, 226, 0.5);
+      }
+      transition: background-color 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      padding: 60px 0 30px;
+    }
+  }
+}

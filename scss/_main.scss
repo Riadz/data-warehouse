@@ -1,0 +1,480 @@
+// landing page
+.landing-page {
+  margin-top: 130px;
+
+  h1 {
+    color: color(color-2);
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 110%;
+
+    @media (max-width: 576px) {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    width: 60%;
+    margin-top: 50px;
+
+    color: color(color-1);
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 160%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  & .main-ilust {
+    margin-left: -300px;
+    margin-bottom: -200px;
+
+    @media (max-width: 1200px) {
+      margin-left: -200px;
+      margin-bottom: -100px;
+      width: 685px;
+    }
+    @media (max-width: 992px) {
+      margin-left: 100px;
+      margin-bottom: 0;
+      margin-top: -70px;
+
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      margin: 40px 0 0;
+    }
+  }
+
+  & .cta-btn {
+    margin-top: 50px;
+
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+// about
+.about {
+  margin-top: 199.18px;
+
+  .about-card {
+    padding: 92px 72px 45px;
+
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+
+    @media (max-width: 1200px) {
+      padding: 50px;
+    }
+    @media (max-width: 768px) {
+      padding: 35px;
+      border-radius: 25px;
+      text-align: center;
+    }
+    @media (max-width: 576px) {
+      padding: 35px 15px;
+    }
+  }
+
+  h2 {
+    color: color(color-2);
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 130%;
+  }
+
+  p {
+    margin-top: 40px;
+
+    color: color(color-1);
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 160%;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 80px;
+
+    &-ilust {
+      width: 100%;
+    }
+  }
+}
+// features
+.features {
+  margin-top: 149.82px;
+
+  &-container {
+    margin-top: 100px;
+
+    @media (max-width: 768px) {
+      margin-top: 30px;
+    }
+  }
+
+  h2 {
+    color: color(color-2);
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 130%;
+  }
+
+  p {
+    max-width: 584px;
+    margin: 50px auto 0;
+
+    color: color(color-1);
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 160%;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+.feature {
+  height: 358px;
+  margin-bottom: 50px;
+  padding: 49px 50px 33px 0;
+  position: relative;
+  &:nth-child(even) {
+    margin-left: 42.71px;
+  }
+
+  &-ilust {
+    img {
+      max-width: 100%;
+    }
+
+    @media (max-width: 576px) {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+
+  &-text {
+    h3 {
+      color: color(color-2);
+      font-family: Helvetica;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 130%;
+    }
+    p {
+      min-height: 160px;
+      margin-top: 20px;
+
+      color: color(color-1);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+    }
+  }
+
+  &-cta {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    color: color(color-2);
+    letter-spacing: 0.005em;
+    font-size: 16px;
+    font-weight: 800;
+
+    span {
+      margin-right: 20px;
+    }
+
+    &:hover img {
+      transform: translateX(50%);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    &-img {
+      position: absolute;
+      height: 100%;
+      width: auto;
+      right: 0;
+
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
+    &-shape {
+      position: absolute;
+    }
+  }
+
+  @media (max-width: 992px) {
+    margin-left: 0 !important;
+  }
+  @media (max-width: 576px) {
+    padding: 10px;
+    z-index: 0;
+
+    border-radius: 20px;
+    &:nth-child(1) {
+      background-color: #f0faf9;
+    }
+    &:nth-child(2) {
+      background-color: #f6f0fd;
+    }
+    &:nth-child(3) {
+      background-color: #fef0f8;
+    }
+    &:nth-child(4) {
+      background-color: #eaf6fc;
+    }
+  }
+
+  // features background shapes
+  .f1-s1 {
+    top: 43.88px;
+    right: 117.37px;
+  }
+  .f1-s2 {
+    top: -30px;
+    right: 12px;
+  }
+  .f2-s1 {
+    top: 190px;
+    right: 15px;
+    transform: rotate(45deg);
+  }
+  .f3-s1 {
+    top: 28px;
+    right: 28px;
+  }
+  .f4-s1 {
+    bottom: 24.22px;
+    right: 24.22px;
+  }
+  .f4-s2 {
+    top: 22px;
+    right: 104px;
+  }
+}
+// testimonials
+.testimonials {
+  margin-top: 100px;
+
+  overflow: hidden;
+  .owl-stage-outer {
+    overflow: visible;
+  }
+
+  h2 {
+    color: #fff;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 130%;
+  }
+
+  &-container {
+    padding: 109px 93px 60px;
+
+    background-color: color(color-3);
+    border-radius: 50px;
+
+    @media (max-width: 768px) {
+      padding-top: 60px;
+    }
+    @media (max-width: 576px) {
+      padding: 30px 20px;
+      border-radius: 20px;
+    }
+  }
+
+  &-carousel-wrapper {
+    margin-top: 88px;
+
+    @media (max-width: 768px) {
+      margin-top: 60px;
+    }
+  }
+}
+.active .testimonials-carousel-card {
+  opacity: 1;
+}
+.testimonials-carousel {
+  &-card {
+    position: relative;
+    z-index: 2;
+    width: 645px;
+    padding: 60px 70px 50px;
+    margin: 0;
+
+    background: #fff;
+    box-shadow: 0px 20px 0px rgba(66, 49, 88, 0.2);
+    border: 1px solid color(color-3);
+    border-radius: 20px;
+
+    opacity: 0.9;
+
+    @media (max-width: 992px) {
+      padding: 35px;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      padding: 20px;
+      flex-direction: column;
+    }
+  }
+
+  &-card-avatar {
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    width: 88px;
+
+    margin-right: 30px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  h4 {
+    margin-top: 15px;
+
+    color: color(color-2);
+    font-weight: 900;
+    font-size: 1.125rem;
+    line-height: 160%;
+  }
+  h6 {
+    color: color(color-3);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+  }
+  p {
+    margin-top: 19px;
+
+    color: color(color-1);
+    font-size: 1.125rem;
+    line-height: 180%;
+  }
+
+  .owl-dots {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+
+    .owl-dot {
+      background-color: #fff;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        background-color: color(color-4);
+      }
+      transition: background-color 0.2s ease;
+    }
+    .owl-dot.active {
+      background-color: color(color-4);
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    span {
+      display: none;
+    }
+
+    .owl-prev,
+    .owl-next {
+      width: 42px;
+      height: 16px;
+      background-image: url('../img/testimonials/nav_arrows/active.png') !important;
+      background-repeat: no-repeat !important;
+    }
+    .owl-prev.disabled,
+    .owl-next.disabled {
+      background-image: url('../img/testimonials/nav_arrows/disabled.png') !important;
+      background-position: right;
+    }
+    .owl-next {
+      margin-left: 20px;
+      transform: rotate(180deg);
+    }
+  }
+}
+// promotion
+.promotion {
+  margin-top: 150px;
+  padding-top: 100px;
+  border-top: 2px solid rgba(129, 125, 134, 0.2);
+
+  &-text {
+    h2 {
+      color: color(color-2);
+      font-family: Helvetica;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 130%;
+    }
+    p {
+      margin-top: 20px;
+
+      color: color(color-1);
+      font-weight: 500;
+      font-size: 1.125rem;
+      line-height: 160%;
+    }
+  }
+
+  &-cta {
+    display: flex;
+    margin: auto 0;
+
+    .cta-btn {
+      margin-right: 30px;
+      background-color: color(color-4);
+      &:hover {
+        background-color: color(color-5);
+      }
+
+      @media (max-width: 576px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
