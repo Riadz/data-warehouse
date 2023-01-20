@@ -1,6 +1,6 @@
 # data-warehouse
 
-This is the implementation of a design by Aryo Pamungkas (https://dribbble.com/shots/10058339-FIGMA-FREEBIES-Data-warehouse-homepage)
+This is the implementation of a design by Aryo Pamungkas (https://uigarage.net/ui-kit/data-warehouse-landing-page-for-figma/)
 
 I made this design into a fully responsive website using bootstrap and sass
 
